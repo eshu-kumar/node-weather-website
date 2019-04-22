@@ -16,7 +16,8 @@ const app=express();//by calling this function we are creating the express appli
 //define paths for express config
 const publicdirectorypath=path.join(__dirname,'../public');
 const viewsdirpath=path.join(__dirname,'../templates/views');
-const partialspath=path.join(__dirname,'../templates/partials')
+const partialspath=path.join(__dirname,'../templates/partials');
+const port = process.env.PORT || 3000 ;
 //now register partials 
 hbs.registerPartials(partialspath);
 
@@ -114,6 +115,6 @@ app.get('*',(req,res)=>{
 
 //this app.listen is run to start the web server to keep it up and running
 //you can use the different available ports also to run it that are available
-app.listen(3000,()=>{
-    console.log('web server has been started')
+app.listen(port,()=>{
+    console.log('web server has been started on port '+port)
 })
