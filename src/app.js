@@ -3,6 +3,7 @@ const express=require('express');
 const hbs=require('hbs')
 const geocode=require('./utils/geocode.js')
 const forecast=require('./utils/forecast.js')
+//just making some changes to explore the git
 //express exposes only one function express we can call this function to start and getting things done
 const app=express();//by calling this function we are creating the express application
 //we can use this app variable to do all things we want to do with express application
