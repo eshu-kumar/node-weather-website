@@ -45,7 +45,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         title:"help",
         name:"Eshu kuamr",
-        message:"keep your motives private"
+        message:"Have a good day"
     })
 })
 //express will match all the path from top to bottom
